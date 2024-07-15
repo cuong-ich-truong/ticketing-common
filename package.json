@@ -2,11 +2,24 @@
   "name": "@cit-zk/ticketing-common",
   "version": "1.0.0",
   "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && tsc",
+    "clean": "del ./build/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cuong-ich-truong/ticketing-common"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "typescript": "^5.5.3"
+  }
 }
